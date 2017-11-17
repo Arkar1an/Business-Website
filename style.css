@@ -16,7 +16,7 @@ body {
 
 header {
   width: 100%;
-  border-bottom: 1px solid #9eabb4;
+  /*border-bottom: 1px solid #9eabb4;*/
   /*z-index: 10;*/
   position: fixed;
 }
@@ -26,7 +26,9 @@ header a {
   text-decoration: none;
 }
 #main-header {
-  background-color: #0E2F44;
+  /*background-color: #0E2F44;*/
+  /*background: rgba(14, 47, 68, 0.8);*/
+  background: rgba(0, 0, 0, 0.6);
 }
 #main-header #branding {
   color:#fff;
@@ -48,6 +50,16 @@ a:hover {
 
   color:#fff;
 }
+
+ul:hover li {
+  opacity: .8;
+  filter: blur(1px);
+}
+ul li:hover {
+  opicity: 1;
+  filter: blur(0px);
+}
+
 nav {
   float:right;
   margin-top: 8px;

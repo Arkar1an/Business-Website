@@ -17,3 +17,15 @@
   // 		scrollTop: $($(this).attr('href')).offset().top
   // 	}, 500, 'linear');
   // });
+
+
+// stick on scroll
+
+$(window).scroll(function(){
+  if($(this).scrollTop()>100{
+    $(.menu).addClass("sticky");
+  }
+  else{
+    $(.menu).removeClass("sticky");
+  }
+})
