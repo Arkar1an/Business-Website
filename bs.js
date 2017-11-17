@@ -19,13 +19,15 @@
   // });
 
 
-// stick on scroll
 
-$(window).scroll(function(){
-  if($(this).scrollTop()>100{
-    $(.menu).addClass("sticky");
-  }
-  else{
-    $(.menu).removeClass("sticky");
-  }
-})
+
+$(function(){
+  $(window).scroll(function() {
+     if($(window).scrollTop() >= 100) {
+       $('nav').addClass('scrolled');
+     }
+    else {
+      $('nav').removeClass('scrolled');
+    }
+  });
+});

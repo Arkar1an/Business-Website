@@ -6,7 +6,6 @@ body {
   margin:0;
   padding:0;
 }
-
 .container {
   width: 90%;
   margin:auto;
@@ -14,43 +13,53 @@ body {
 }
 
 
-header {
+nav {
   width: 100%;
+  min-height: 50px;
   /*border-bottom: 1px solid #9eabb4;*/
   /*z-index: 10;*/
   position: fixed;
+  background: none;
+  transition: 0.35s all ease;
+  padding:2rem;
+
 }
 
-header a {
-  color:#ccc;
-  text-decoration: none;
+
+nav ul {
+  float:right;
+  margin: 0;
+
+
 }
-#main-header {
-  /*background-color: #0E2F44;*/
-  /*background: rgba(14, 47, 68, 0.8);*/
-  background: rgba(0, 0, 0, 0.6);
-}
-#main-header #branding {
+nav #branding {
+  margin:0;
+
+  float:left;
   color:#fff;
+  text-transform: uppercase;
 
 }
 
-ul {
-  padding:0;
+nav a {
+  color:#fff;
+  text-decoration: none;
+
 }
+
+
+
 
 li {
   list-style: none;
   display:inline;
-  padding-right: 14px;
+  padding-right: 15px;
 }
 
 
-a:hover {
-
+/*a:hover {
   color:#fff;
-}
-
+}*/
 ul:hover li {
   opacity: .8;
   filter: blur(1px);
@@ -60,13 +69,17 @@ ul li:hover {
   filter: blur(0px);
 }
 
-nav {
-  float:right;
-  margin-top: 8px;
+
+/*when scroll*/
+.scrolled {
+
+  min-height: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 1em 2em;
+  transition: 0.35s all ease;
 }
-header #branding {
-  float:left;
-}
+
+
 
 #showcase {
   min-height: 100vh;
@@ -74,7 +87,6 @@ header #branding {
   background-image: url('images/showcase.jpg');
   background-size: cover;
   background-position:center;
-
 
   /*this method make the image zooms in*/
   background-attachment: fixed;
@@ -92,11 +104,17 @@ header #branding {
 
   margin:0;
   line-height: 1.2em;
-  t
+
 }
 
 
+.white {
+  background-color:#fff;
+  padding:100px 60px;
+  /*position: relative;
+  top:650px;*/
 
+}
 .colored {
   background-color:#264356;
   color:#fff;
@@ -115,16 +133,6 @@ h3 {
   font-size: 30px;
 }
 
-.white {
-  background-color:#fff;
-  padding:100px 60px;
-
-
-
-  /*position: relative;
-  top:650px;*/
-
-}
 
 footer {
   padding:20px;
@@ -137,10 +145,16 @@ footer {
 }
 
 @media(max-width:768px){
-  nav, #branding{
+
+  ul, #branding{
     float:none;
     width:100%;
     text-align: center;
     line-height: .8em;
   }
+  #branding {
+    padding-top:5px;
+    padding-bottom: 15px;
+  }
+
 }
