@@ -91,7 +91,7 @@ a:hover {
 #showcase {
   min-height: 100vh;
 
-  background-image: url('images/showcase4.jpeg');
+  background-image: url('images/showcase5.jpeg');
   background-size: cover;
   background-position:center;
 
@@ -101,16 +101,17 @@ a:hover {
   position: fixed;*/
 }
 #showcase p {
-  color:#ccc;
+  color:#fff;
   font-size:40px;
   font-weight: bold;
   text-align: center;
-  padding-top:400px;
+  padding-top:550px;
   padding-left: 10px;
   padding-right: 10px;
-
   margin:0;
   line-height: 1.2em;
+
+
 
 }
 
@@ -215,7 +216,7 @@ footer #section1 {
   footer #section1, footer #section2 {
 
     float: none;
-    width:100%;
+    width:95%;
     margin-top: 50px;
 
   }
