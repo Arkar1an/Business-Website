@@ -6,6 +6,7 @@ body {
   margin:0;
   padding:0;
 }
+
 .container {
   width: 90%;
   margin:auto;
@@ -44,13 +45,10 @@ nav #branding {
 nav a {
   color:#fff;
   text-decoration: none;
-
 }
 
 
-
-
-li {
+nav li {
   list-style: none;
   display:inline;
   padding-right: 15px;
@@ -61,8 +59,8 @@ li {
   font-size:21px;
 }
 
-
-ul:hover li {
+/*blur hover*/
+/*ul:hover li {
   opacity: .8;
   filter: blur(1px);
 }
@@ -70,6 +68,11 @@ ul li:hover {
   opicity: 1;
   filter: blur(0px);
   font-size: 21px;
+}*/
+
+a:hover {
+  font-size: 21px;
+  color:#f4f4f4;
 }
 
 
@@ -126,13 +129,9 @@ ul li:hover {
   padding:100px 60px;
 
 
-  /*position: relative;
-  top:650px;*/
-
-
 
 }
-
+/*nav*/
 h3 {
   text-align: center;
   font-size: 30px;
@@ -140,26 +139,89 @@ h3 {
 
 
 footer {
-  padding:20px;
+  min-height:500px;
   background:#101010;
-  text-align: center;
   color:#fff;
-
-  /*position:relative;
-  top:650px;*/
 }
+
+footer .heading {
+  font-size:30px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom:10px;
+}
+
+footer p {
+  padding-top: 420px;
+  text-align: center;
+}
+
+footer ul {
+
+  height: 250px;
+  padding:0px;
+  line-height: 1.2em;
+  margin-top: 180px;
+  background-color:#f4f4f4;
+  color:#000;
+  padding: 4px;
+  margin: 10px;
+  margin-top: 100px;
+  overflow: hidden;
+  text-align: center;
+
+  border: 2px solid;
+    border-radius: 25px;
+}
+footer li {
+    list-style: none;
+    padding-bottom:10px;
+    font-size: 16px;
+}
+
+footer #section1 {
+  float: left;
+  width:45%;
+
+}
+ footer #section2 {
+   float: right;
+   width: 45%;
+
+
+ }
+
+
 
 @media(max-width:768px){
 
-  ul, #branding{
+  /*Main Nav*/
+   nav ul, nav #branding{
     float:none;
     width:100%;
     text-align: center;
     line-height: .8em;
   }
-  #branding {
+  nav ul {
+    padding-left:0;
+  }
+  nav #branding {
     padding-top:5px;
     padding-bottom: 15px;
   }
+
+  /*Footer*/
+
+  footer #section1, footer #section2 {
+
+    float: none;
+    width:100%;
+    margin-top: 50px;
+
+  }
+  footer p {
+    padding-top: 20px;
+  }
+
 
 }
