@@ -9,9 +9,10 @@ body {
 
 .container {
   width: 90%;
-  margin:auto;
+  margin:0;
   overflow:hidden;
 }
+
 
 
 nav {
@@ -23,6 +24,7 @@ nav {
   background: none;
   transition: 0.35s all ease;
   padding:2rem;
+
 
 }
 
@@ -81,8 +83,9 @@ a:hover {
 
   min-height: 10px;
   background: rgba(0, 0, 0, 0.8);
-  padding: 1em 2em;
+  padding: 1rem 2rem;
   transition: 0.35s all ease;
+
 
 }
 
@@ -91,7 +94,7 @@ a:hover {
 #showcase {
   min-height: 100vh;
 
-  background-image: url('images/showcase5.jpeg');
+  background-image: url('images/showcase7.jpg');
   background-size: cover;
   background-position:center;
 
@@ -158,16 +161,15 @@ footer p {
 }
 
 footer ul {
-
+  padding:0;
+  margin-top:100px;
   height: 250px;
-  padding:0px;
   line-height: 1.2em;
-  margin-top: 180px;
+
   background-color:#f4f4f4;
   color:#000;
-  padding: 4px;
-  margin: 10px;
-  margin-top: 100px;
+
+
   overflow: hidden;
   text-align: center;
 
@@ -181,13 +183,14 @@ footer li {
 }
 
 footer #section1 {
+  margin-left: 10%;
   float: left;
-  width:45%;
+  width:40%;
 
 }
  footer #section2 {
    float: right;
-   width: 45%;
+   width: 40%;
 
 
  }
@@ -201,7 +204,7 @@ footer #section1 {
     float:none;
     width:100%;
     text-align: center;
-    line-height: .8em;
+    line-height: 1.2em;
   }
   nav ul {
     padding-left:0;
@@ -216,12 +219,17 @@ footer #section1 {
   footer #section1, footer #section2 {
 
     float: none;
-    width:95%;
-    margin-top: 50px;
+    width:90%;
+  }
 
+  footer #section2 {
+    margin-left: 10%;
+    margin-top:40px;
   }
   footer p {
     padding-top: 20px;
+    text-align: center;
+
   }
 
 
