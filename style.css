@@ -32,21 +32,19 @@ nav {
 nav ul {
   float:right;
   margin: 0;
+  padding-top: 15px;
 
 
 }
-nav #branding {
-  margin:0;
-  font-size: 30px;
-  float:left;
-  color:#fff;
-  text-transform: uppercase;
 
+
+#main-header {
+  padding-top:20px;
 }
-
 nav a {
   color:#fff;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 
@@ -54,27 +52,19 @@ nav li {
   list-style: none;
   display:inline;
   padding-right: 15px;
+  font-size: 16px;
+
 }
 
 
 .active {
-  font-size:21px;
+  font-size:19px;
 }
 
-/*blur hover*/
-/*ul:hover li {
-  opacity: .8;
-  filter: blur(1px);
-}
-ul li:hover {
-  opicity: 1;
-  filter: blur(0px);
-  font-size: 21px;
-}*/
 
 a:hover {
-  font-size: 21px;
-  color:#f4f4f4;
+  font-size: 19px;
+
 }
 
 
@@ -82,19 +72,19 @@ a:hover {
 .scrolled {
 
   min-height: 10px;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.9);
+
   padding: 1rem 2rem;
+
   transition: 0.35s all ease;
 
 
 }
 
 
-
 #showcase {
   min-height: 100vh;
-
-  background-image: url('images/showcase7.jpg');
+  background-image: url('images/showcase6.jpg');
   background-size: cover;
   background-position:center;
 
@@ -103,6 +93,13 @@ a:hover {
   /*width:100%;
   position: fixed;*/
 }
+
+nav img {
+  background:none;
+  width:280px;
+
+}
+
 #showcase p {
   color:#fff;
   font-size:40px;
@@ -128,7 +125,7 @@ a:hover {
 }
 .colored {
   /*background-color:#264356;*/
-  background-color: #202020;
+  background-color: #101010;
   color:#fff;
   padding:100px 60px;
 
@@ -210,8 +207,12 @@ footer #section1 {
     padding-left:0;
   }
   nav #branding {
-    padding-top:5px;
-    padding-bottom: 15px;
+    width:300px;
+
+    /*align image to the center*/
+    display:block;
+    margin: auto;
+    width:50%;
   }
 
   /*Footer*/
