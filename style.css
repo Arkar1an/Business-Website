@@ -39,7 +39,8 @@ nav ul {
 
 
 #main-header {
-  padding-top:20px;
+  padding-top:10px;
+  padding-bottom: 10px;
 }
 nav a {
   color:#fff;
@@ -96,7 +97,7 @@ a:hover {
 
 nav img {
   background:none;
-  width:280px;
+  width:120px;
 
 }
 
@@ -192,6 +193,16 @@ footer #section1 {
 
  }
 
+ footer img {
+   padding-top: 50px;
+   padding-bottom: 50px;
+   
+
+   display:block;
+   margin:auto;
+   width: 300px;
+ }
+
 
 
 @media(max-width:768px){
@@ -207,12 +218,12 @@ footer #section1 {
     padding-left:0;
   }
   nav #branding {
-    width:300px;
+
 
     /*align image to the center*/
     display:block;
     margin: auto;
-    width:50%;
+    width:140px;
   }
 
   /*Footer*/
@@ -227,11 +238,5 @@ footer #section1 {
     margin-left: 10%;
     margin-top:40px;
   }
-  footer p {
-    padding-top: 20px;
-    text-align: center;
-
-  }
-
 
 }
