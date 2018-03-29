@@ -8,4 +8,4 @@ Built using basic HTML and CSS, and very little Javascript. This was an early at
 
 ## License
 
-This project is licensed under the GNU GPLv3 - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the GNU GPLv3 - see the [LICENSE](LICENSE) file for details
